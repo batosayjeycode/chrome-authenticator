@@ -1,0 +1,32 @@
+{
+  "name": "chrome-authenticator",
+  "version": "1.0.0",
+  "description": "Chrome Authenticator Extension with VPN Password Integration",
+  "private": true,
+  "scripts": {
+    "dev": "webpack --config webpack.dev.js --watch --progress",
+    "build": "webpack --config webpack.prod.js",
+    "lint": "eslint src/"
+  },
+  "dependencies": {
+    "jsqr": "^1.4.0",
+    "vue": "^3.4.21"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.24.0",
+    "@babel/preset-env": "^7.24.0",
+    "@vue/compiler-sfc": "^3.4.21",
+    "babel-loader": "^9.1.3",
+    "copy-webpack-plugin": "^12.0.2",
+    "css-loader": "^6.10.0",
+    "eslint": "^8.57.0",
+    "eslint-plugin-vue": "^9.24.0",
+    "sass": "^1.72.0",
+    "sass-loader": "^14.1.1",
+    "style-loader": "^3.3.4",
+    "vue-loader": "^17.4.2",
+    "webpack": "^5.91.0",
+    "webpack-cli": "^5.1.4",
+    "webpack-merge": "^6.0.1"
+  }
+}
