@@ -42,9 +42,10 @@ Membangun Chrome Extension Manifest v3 menggunakan Vue 3 + JavaScript (tanpa Typ
 
 ### Load Extension di Chrome
 ```bash
-1. npm run build
-2. Buka chrome://extensions/
-3. Enable "Developer Mode"
-4. Klik "Load unpacked" → pilih folder dist/ (atau root jika manifest di root)
-5. Test semua fitur
+1. npm install
+2. npm run build
+3. Buka chrome://extensions/
+4. Enable "Developer Mode"
+5. Klik "Load unpacked" → pilih folder dist/ (atau root jika manifest di root)
+6. Test semua fitur
 ```
