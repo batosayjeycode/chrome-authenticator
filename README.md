@@ -11,6 +11,7 @@ Membangun Chrome Extension Manifest v3 menggunakan Vue 3 + JavaScript (tanpa Typ
 - CSS: SCSS
 - TOTP: implementasi manual via Web Crypto API (tidak bergantung library eksternal besar)
 - QR Decode: `jsqr` library
+- Node v22.15.1
 
 ---
 
