@@ -1,6 +1,7 @@
 const path = require('path');
 const { VueLoaderPlugin } = require('vue-loader');
 const webpack = require('webpack');
+const CopyWebpackPlugin = require('copy-webpack-plugin');
 
 module.exports = {
   entry: {
@@ -47,6 +48,13 @@ module.exports = {
       __VUE_OPTIONS_API__: true,
       __VUE_PROD_DEVTOOLS__: false,
       __VUE_PROD_HYDRATION_MISMATCH_DETAILS__: false,
+    }),
+    new CopyWebpackPlugin({
+      patterns: [
+        { from: 'manifest.json', to: 'manifest.json' },
+        { from: 'view/popup.html', to: 'popup.html' },
+        { from: 'images', to: 'images' },
+      ],
     }),
   ],
   resolve: {
