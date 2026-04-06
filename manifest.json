@@ -9,7 +9,7 @@
     "128": "images/icon-128.png"
   },
   "action": {
-    "default_popup": "view/popup.html",
+    "default_popup": "popup.html",
     "default_icon": {
       "16": "images/icon-16.png",
       "48": "images/icon-48.png",
@@ -17,12 +17,12 @@
     }
   },
   "background": {
-    "service_worker": "dist/background.bundle.js"
+    "service_worker": "background.bundle.js"
   },
   "content_scripts": [
     {
       "matches": ["<all_urls>"],
-      "js": ["dist/content.bundle.js"],
+      "js": ["content.bundle.js"],
       "run_at": "document_idle"
     }
   ],
